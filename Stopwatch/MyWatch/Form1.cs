@@ -55,8 +55,16 @@ namespace MyWatch
 
         private void button4_Click(object sender, EventArgs e)
         {
-            stopwatch.Stop();
-            
+            if (stopwatch.IsRunning)
+            {
+                stopwatch.Stop();
+            }
+
+            else
+            {
+                stopwatch.Start();
+            }
+
 
         }
     }
